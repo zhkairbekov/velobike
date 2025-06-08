@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система автоматизированного велопроката в городе Астана</title>
+    <link rel="icon" href="img/astanabike.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo"><img src="img/logo.png" alt="Logo" class="nav-logo"></div>
+        <nav class="nav" id="nav">
+            <a href="#">Главная</a>
+            <a href="#">Велостанции</a>
+            <a href="#tarif">Тарифы</a>
+            <a href="#news">Новости</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Контакты</a>
+            <a href="#contact" class="language-button">ВХОД</a>
+            <div class="language-selector">
+                <button class="language-button" id="language-button">RU</button>
+                <ul class="language-dropdown" id="language-dropdown">
+                    <li data-lang="kz"><a href="kz.html">KZ</a></li>
+                    <li data-lang="ru"><a href="index.html">RU</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <section class="slider" id="slider">
+        <div class="fixed-text">
+            <img src="img/big-logo.png" alt="">
+            <div>
+                <h1 class="slider-title"><strong>Система автоматизированного<br>
+                        велопроката в городе Астана</strong></h1>
+                <p class="slider-description">Цель проекта - создать альтернативу автомобилю и общественному транспорту,
+                    предоставить жителям города и туристам доступный транспорт для передвижения.
+                </p>
+            </div>
+            <img src="img/big-logo-cts.png" alt="">
+        </div>
+    </section>
+    <section class="instruction">
+        <div class="container">
+            <h2>Инструкция для велосипедов</h2>
+            <img src="img/ru/abon-ru.png" alt="Инструкция" class="instruction-image w-100">
+        </div>
+    </section>
+    <section class="instruction instruction-electric">
+        <div class="container">
+            <h2>Инструкция для электрических велосипедов</h2>
+            <div class="instruction-list">
+                <img src="img/ru/slider/1_ru.jpg" alt="Инструкция шаг 1" class="instruction-image">
+                <img src="img/ru/slider/2_ru.jpg" alt="Инструкция шаг 2" class="instruction-image">
+                <img src="img/ru/slider/3_ru.jpg" alt="Инструкция шаг 3" class="instruction-image">
+                <img src="img/ru/slider/4_ru.jpg" alt="Инструкция шаг 4" class="instruction-image">
+                <img src="img/ru/slider/5_ru.jpg" alt="Инструкция шаг 5" class="instruction-image">
+                <img src="img/ru/slider/6_ru.jpg" alt="Инструкция шаг 6" class="instruction-image">
+            </div>
+            <div class="youtube">
+                <iframe src="https://www.youtube.com/embed/U27-xmfXnEg?si=KJ5UFzyd3Awnz5CI"
+                    title="Представляем вашему вниманию видеоинструкцию, как правильно взять и припарковать велосипед"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/-Cf52UwhC7E?si=eqpWYhvilNpZhBWz"
+                    title="Сіздердің назарларыңызға велосипедті дұрыс алу және қою бейненұсқаулықты ұсынамыз"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/Oli0ApqEBqQ?si=drrBIGs88JIS3cQX"
+                    title="Предлагаем вашему вниманию подробную инструкцию по регистрации на сайте velobike.kz"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/u4O4khUXy6A?si=DG7VAVFEDcyAVljT"
+                    title="Друзья!⠀Мы продолжаем знакомить Вас с правилами пользования столичным велопрокатом"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <section class="news" id="news">
+        <div class="container">
+            <h2>Новости</h2>
+            <div class="news-list">
+                <a href="#" class="news-item">
+                    <img src="img/news/2015news.jpeg" alt="Новость 1" class="news-image">
+                    <h3>15 апреля в столице</h3>
+                    <p>Друзья! 15 апреля в столице стартует новый сезон велопроката «Astana Bike».Старт в 09:00 часов
+                        утра.Приобретение абонемента и прокат</p>
+                    <p style="text-decoration: underline; text-align: end;">Читать подробнее</p>
+                </a>
+                <a href="#" class="news-item">
+                    <img src="img/news/велошеринг 2.jpeg" alt="Новость 2" class="news-image">
+                    <h3>Столичные велосипеди</h3>
+                    <p>С начала велосезона (15 апреля 2021г.) столичные пользователи велошеринга «Astana Bike»
+                        преодолели общее расстояние в более 1 млн километр</p>
+                    <p style="text-decoration: underline; text-align: end;">Читать подробнее</p>
+                </a>
+                <a href="#" class="news-item">
+                    <img src="img/news/Опрос.jpeg" alt="Новость 3" class="news-image">
+                    <h3>Опрос</h3>
+                    <p>Уважаемые пользователи столичного велошеринга! ⠀ Мы проводим для вас специальный ОПРОС. ⠀ Ваши
+                        ответы помогут нам более детально изучить осо</p>
+                    <p style="text-decoration: underline; text-align: end;">Читать подробнее</p>
+                </a>
+            </div>
+            <a href="#" class="all-news">Все новости</a>
+    </section>
+    <section id="tarif">
+        <div class="container container-for-table">
+            <h2>Тарифы</h2>
+            <div class="tab-content">
+                <div class="table-one">
+                    <h3>АБОНЕНТСКАЯ ПЛАТА</h3>
+                    <table cellspacing="0" cellpadding="0">
+                        <thead>
+                            <tr>
+                                <td colspan="2">
+                                    <p>Тарифный план</p>
+                                </td>
+                                <td>
+                                    <p class="width">№1 в стоимость входит каждая поездка длительностью до 30 минут</p>
+                                </td>
+                                <td>
+                                    <p class="width">№2 в стоимость входит каждая поездка длительностью до 45 минут</p>
+                                </td>
+                                <td>
+                                    <p class="width">№3 в стоимость входит каждая поездка длительностью до 60 минут</p>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">
+                                    <p>Месячный</p>
+                                </td>
+                                <td>
+                                    <p>стандартный</p>
+                                </td>
+                                <td>
+                                    <p>2 500</p>
+                                </td>
+                                <td>
+                                    <p>3 125</p>
+                                </td>
+                                <td>
+                                    <p>3 750</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>льготный *</p>
+                                </td>
+                                <td>
+                                    <p>-</p>
+                                </td>
+                                <td>
+                                    <p>-</p>
+                                </td>
+                                <td>
+                                    <p>-</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">
+                                    <p>Квартальный</p>
+                                </td>
+                                <td>
+                                    <p>стандартный</p>
+                                </td>
+                                <td>
+                                    <p>6 000</p>
+                                </td>
+                                <td>
+                                    <p>7 500</p>
+                                </td>
+                                <td>
+                                    <p>9 000</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>льготный *</p>
+                                </td>
+                                <td>
+                                    <p>3 000</p>
+                                </td>
+                                <td>
+                                    <p>3 250</p>
+                                </td>
+                                <td>
+                                    <p>4 500</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">
+                                    <p>Сезонный</p>
+                                </td>
+                                <td>
+                                    <p>стандартный</p>
+                                </td>
+                                <td>
+                                    <p>10&nbsp;000</p>
+                                </td>
+                                <td>
+                                    <p>12&nbsp;500</p>
+                                </td>
+                                <td>
+                                    <p>15 000</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>льготный *</p>
+                                </td>
+                                <td>
+                                    <p>5 000</p>
+                                </td>
+                                <td>
+                                    <p>6 250</p>
+                                </td>
+                                <td>
+                                    <p>7 500</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="tabel-footer-one">
+                        <h4>* Льготными абонементами могут воспользоваться:</h4>
+                        <p>˗граждане, относящиеся к следующим льготным категориям: участники и
+                            инвалиды
+                            ВОВ и лица, приравненные к ним; ветераны-афганцы; многодетные матери;
+                            дети с
+                            особыми потребностями, в том числе одному из родителей (законным
+                            представителям); инвалиды всех групп; многодетные семьи (предоставляется
+                            только
+                            одному из родителей).
+                        </p>
+                        <h4>Подтверждение – пенсионное удостоверение.</h4>
+                        <p>˗студенты, обучающиеся в высших и специализированных учебных заведениях
+                            города
+                            Астаны.
+                        </p>
+                        <h4>Подтверждение – справка с учебного заведения на текущий год.</h4>
+                        <h4>ВАЖНО: Льгота предоставляется только зарегистрированным и постоянно
+                            проживающим
+                            гражданам льготной категории в городе Астана. Гражданам льготной
+                            категории,
+                            зарегистрированным в других городах РК, льгота на абонентскую плату не
+                            предоставляется.</h4>
+                    </div>
+                    <div class="tabel-footer-one">
+                        <p>Минимальный баланс на счету пользователя должен составлять 500 тенге.</p>
+                        <h4>ВАЖНО: Начисленный, в рамках акций, бонусный баланс возврату не подлежит. Баланс,
+                            пополняемый
+                            пользователями, можно вернуть на центральный кассе ТОО «CTS».</h4>
+                    </div>
+                </div>
+                <div class="table-two">
+                    <h3>ПОВРЕМЕННАЯ ЧАСТЬ</h3>
+                    <table cellspacing="0" cellpadding="0">
+                        <thead>
+                            <tr>
+                                <td>
+                                    <p>Тарифный план</p>
+                                </td>
+                                <td>
+                                    <p class="width">Абонемент №1</p>
+                                </td>
+                                <td>
+                                    <p class="width">Абонемент №2</p>
+                                </td>
+                                <td>
+                                    <p class="width">Абонемент №3</p>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>Бесплатно</p>
+                                </td>
+                                <td>
+                                    <p>от 0 минут <br>до 30 минут</p>
+                                </td>
+                                <td>
+                                    <p>от 0 минуты <br>до 45 минут</p>
+                                </td>
+                                <td>
+                                    <p>от 0 минуты <br>до 60 минут</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>100 тенге</p>
+                                </td>
+                                <td>
+                                    <p>от 31 минуты <br>до 60 минуты</p>
+                                </td>
+                                <td>
+                                    <p>от 46 минуты <br>до 60 минуты</p>
+                                </td>
+                                <td>
+                                    <p>-</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>250 тенге</p>
+                                </td>
+                                <td>
+                                    <p>от 61 минуты <br>до 120 минуты</p>
+                                </td>
+                                <td>
+                                    <p>от 61 минуты <br>до 120 минуты</p>
+                                </td>
+                                <td>
+                                    <p>от 61 минуты <br>до 120 минуты</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>500 тенге</p>
+                                </td>
+                                <td>
+                                    <p>от 121 минуты <br>до 180 минуты</p>
+                                </td>
+                                <td>
+                                    <p>от 121 минуты <br>до 180 минуты</p>
+                                </td>
+                                <td>
+                                    <p>от 121 минуты <br>до 180 минуты</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>1000 тенге</p>
+                                </td>
+                                <td>
+                                    <p>от 181 минуты и каждый <br>последующий час</p>
+                                </td>
+                                <td>
+                                    <p>от 181 минуты и каждый <br>последующий час</p>
+                                </td>
+                                <td>
+                                    <p>от 181 минуты и каждый <br>последующий час</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-three">
+                    <h3>ШТРАФЫ</h3>
+                    <table cellspacing="0" cellpadding="0">
+                        <thead>
+                            <tr>
+                                <td>
+                                    <p>№</p>
+                                </td>
+                                <td>
+                                    <p class="width">Вид нарушения</p>
+                                </td>
+                                <td>
+                                    <p class="width">Виды штрафов</p>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>1</p>
+                                </td>
+                                <td>
+                                    <p>Возврат с опозданием</p>
+                                    <p>(по истечении 24 часов с момента получения велосипеда в пункте найма
+                                        велосипедов)</p>
+                                </td>
+                                <td>
+                                    <p>30&nbsp;000 тенге/за сутки (до истечения 72 часов *) + фактическая
+                                        стоимость
+                                        найма</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>2</p>
+                                </td>
+                                <td>
+                                    <p>При утере или кражи велосипеда</p>
+                                    <p>(по истечении 72 часов *)</p>
+                                </td>
+                                <td>
+                                    <p>Сумма определяется на основании коммерческого предложения, запрошенного
+                                        до начала
+                                        велосезона от компании, производящей закуп и поставку велооборудования с
+                                        завода-изготовителя на территорию Республики Казахстан</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>3</p>
+                                </td>
+                                <td>
+                                    <p>Повреждение велосипеда</p>
+                                    <p>во время найма или выведение из строя</p>
+                                </td>
+                                <td>
+                                    <p>Сумма определяется размером понесенных Наймодателем расходов по проведению
+                                        ремонтно-восстановительных работ поврежденного велосипеда, в том числе с
+                                        привлечением третьих лиц, либо по приобретению нового велосипеда на основании
+                                        коммерческого предложения от компании, производящей закуп и поставку
+                                        велооборудования с завода-изготовителя на территорию Республики Казахстан, в
+                                        восстановления</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>4</p>
+                                </td>
+                                <td>
+                                    <p>Дорожно-транспортное происшествие</p>
+                                </td>
+                                <td>
+                                    <p>Рассматривается индивидуально согласно причиненному ущербу</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="table-footer-one">
+                        <p>* Велосипед считается утерянным/украденным, если он не был возвращен в пункт найма
+                            велосипедов (велостанцию) по истечении 72 часов с начала найма и его стоимость подлежит
+                            возмещению Нанимателем по рыночной цене.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map">
+            <h2 class="map-title">
+                <img src="img/icons/icon-title-map.jpg" alt="Логотип Велобайк" />
+                Карта велостанций
+            </h2>
+            <div id="map"></div>
+        </div>
+        <div class="cash-desks">
+            <div class="container">
+                <h2 class="cash-desks-title">КАССЫ «CITY TRANSPORTATION SYSTEMS»</h2>
+                <div class="cash-desks-info">
+                    <h3>Центральная касса</h3>
+                    <p><img src="img/icons/pin.png" alt="Address">Адрес: проспект Кошкарбаева, 50/1.</p>
+                    <p><img src="img/icons/time.png" alt="Time">График работы: Понедельник - суббота с 9:00 – до 17:45,
+                        без обеда, Воскресенье - выходной</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <img src="img/icons/mini-logo-cts-green.png" alt="CTS Logo" class="footer-logo">
+            <div class="footer-colums">
+                <div class="footer-colum">
+                    <p class="footer-colum-title"><strong>Мы в соцсетях</strong></p>
+                    <div class="footer-colum-list">
+                        <a href="#"><img src="img/icons/fb.png" alt="Facebook">Официальная группа Facebook</a><br>
+                        <a href="#"><img src="img/icons/insta.png" alt="instagram">Официальный Instagram профайл</a>
+                    </div>
+                </div>
+                <div class="footer-colum">
+                    <p class="footer-colum-title"><strong>CALL CENTER</strong></p>
+                    <div class="footer-colum-list">
+                        <a href="#" class="call-me"><img src="img/icons/telemarketer.png" alt="call me"
+                                class="call-me-img"><strong>109</strong></a><br>
+                        <a href="#" class="call-me-point"><img src="img/icons/docks.png" alt="docks">Жария шарт</a><br>
+                        <a href="#" class="call-me-point"><img src="img/icons/docks.png" alt="docks">Public
+                            contract</a><br>
+                        <a href="#" class="call-me-point"><img src="img/icons/docks.png" alt="docks">Публичный
+                            договор</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Подключение API Яндекс Карт -->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=YOUR_API_KEY_HERE" type="text/javascript"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            ymaps.ready(function () {
+                var myMap = new ymaps.Map('map', {
+                    center: [51.1194, 71.4311], // Координаты города Нур-Султан
+                    zoom: 13
+                });
+
+                // Отключение скролла на карте
+                myMap.behaviors.disable('scrollZoom');
+
+                // Места расположения станций
+                var stations = [
+                    { lat: 51.1194, lon: 71.4311 },
+                    { lat: 51.1234, lon: 71.4356 },
+                    // Другие точки...
+                ];
+
+                // Отображение станций на карте
+                stations.forEach(function (station) {
+                    var placemark = new ymaps.Placemark([station.lat, station.lon], {}, {});
+                    myMap.geoObjects.add(placemark);
+                });
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
