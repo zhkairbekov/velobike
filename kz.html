@@ -13,13 +13,13 @@
     <header class="header">
         <div class="logo"><img src="img/logo.png" alt="Logo" class="nav-logo"></div>
         <nav class="nav" id="nav">
-            <a href="#">Басты бет</a>
-            <a href="#">Велостанциялар</a>
-            <a href="#">Тарифтер</a>
-            <a href="#">Жаңалықтар</a>
+            <a href="#slider">Басты бет</a>
+            <a href="#map-section">Велостанциялар</a>
+            <a href="#tarif">Тарифтер</a>
+            <a href="#news">Жаңалықтар</a>
             <a href="#faq">Сұрақ-Жауап</a>
             <a href="#contact">Байланыс</a>
-            <a href="#contact" class="language-button">КІРУ</a>
+            <a href="#" class="language-button">КІРУ</a>
             <div class="language-selector">
                 <button class="language-button" id="language-button">KZ</button>
                 <ul class="language-dropdown" id="language-dropdown">
@@ -46,7 +46,7 @@
             <img src="img/big-logo-cts.png" alt="">
         </div>
     </section>
-    <section class="instruction">
+    <section class="instruction" id="faq">  
         <div class="container">
             <h2>Велосипедтерге арналған нұсқаулық</h2>
             <img src="img/kz/abon-kz.png" alt="Нұсқаулық" class="instruction-image w-100">
@@ -418,14 +418,14 @@
                 </div>
             </div>
         </div>
-        <div class="map">
+        <div class="map" id="map-section">
             <h2 class="map-title">
                 <img src="img/icons/icon-title-map.jpg" alt="Velobike логотипі" />
                 Велостанциялар картасы
             </h2>
             <div id="map"></div>
         </div>
-        <div class="cash-desks">
+        <div class="cash-desks" id="contact">
             <div class="container">
                 <h2 class="cash-desks-title">«CITY TRANSPORTATION SYSTEMS» КАССАЛАРЫ</h2>
                 <div class="cash-desks-info">
@@ -468,32 +468,6 @@
 
     <!-- Подключение API Яндекс Карт -->
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=YOUR_API_KEY_HERE" type="text/javascript"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            ymaps.ready(function () {
-                var myMap = new ymaps.Map('map', {
-                    center: [51.1194, 71.4311], // Координаты города Нур-Султан
-                    zoom: 13
-                });
-
-                // Отключение скролла на карте
-                myMap.behaviors.disable('scrollZoom');
-
-                // Места расположения станций
-                var stations = [
-                    { lat: 51.1194, lon: 71.4311 },
-                    { lat: 51.1234, lon: 71.4356 },
-                    // Другие точки...
-                ];
-
-                // Отображение станций на карте
-                stations.forEach(function (station) {
-                    var placemark = new ymaps.Placemark([station.lat, station.lon], {}, {});
-                    myMap.geoObjects.add(placemark);
-                });
-            });
-        });
-    </script>
     <script src="script.js"></script>
 </body>
 

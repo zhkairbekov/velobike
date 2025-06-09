@@ -1,3 +1,28 @@
+document.addEventListener('DOMContentLoaded', function () {
+    ymaps.ready(function () {
+        var myMap = new ymaps.Map('map', {
+            center: [51.1194, 71.4311], // Координаты города Нур-Султан
+            zoom: 13
+        });
+
+        // Отключение скролла на карте
+        myMap.behaviors.disable('scrollZoom');
+
+        // Места расположения станций
+        var stations = [
+            { lat: 51.1194, lon: 71.4311 },
+            { lat: 51.1234, lon: 71.4356 },
+            // Другие точки...
+        ];
+
+        // Отображение станций на карте
+        stations.forEach(function (station) {
+            var placemark = new ymaps.Placemark([station.lat, station.lon], {}, {});
+            myMap.geoObjects.add(placemark);
+        });
+    });
+});
+
 // header
 const burger = document.getElementById('burger');
 const nav = document.getElementById('nav');
@@ -46,24 +71,48 @@ document.addEventListener('click', (e) => {
     }
 });
 
-
-// Массив фоновых изображений
-const images = [
+// Массив фоновых изображений для больших экранов
+const desktopImages = [
     'img/slider/1.jpg',
     'img/slider/2.jpg',
     'img/slider/3.jpg',
-    'img/slider/4.jpg'
+    'img/slider/4.jpg',
+    'img/slider/5.jpg'
+];
+
+// Массив фоновых изображений для маленьких экранов
+const mobileImages = [
+    'img/slider/Frame1.png',
+    'img/slider/Frame2.png',
+    'img/slider/Frame3.png',
+    'img/slider/Frame4.png',
+    'img/slider/Frame5.png'
 ];
 
 let currentIndex = 0;
 const slider = document.getElementById('slider');
 
+// Функция для получения актуального массива изображений
+function getCurrentImages() {
+    return window.innerWidth <= 768 ? mobileImages : desktopImages;
+}
+
 // Функция для смены фона
 function changeBackground() {
+    const images = getCurrentImages();
     slider.style.backgroundImage = `url(${images[currentIndex]})`;
     currentIndex = (currentIndex + 1) % images.length;
 }
 
+// Обновление currentIndex при изменении размера окна,
+// чтобы избежать выхода за границы нового массива
+window.addEventListener('resize', () => {
+    const images = getCurrentImages();
+    if (currentIndex >= images.length) {
+        currentIndex = 0;
+    }
+});
+
 // Старт
 changeBackground(); // Установить первый фон сразу
-setInterval(changeBackground, 8000); // Менять фон каждые 5 секунд
+setInterval(changeBackground, 8000); // Менять фон каждые 8 секунд
