@@ -420,7 +420,7 @@ header .nav .language-button {
 .cash-desks-info p {
     display: flex;
     gap: 1rem;
-    align-items: end;
+    align-items: center;
 }
 
 footer {
