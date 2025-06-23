@@ -650,3 +650,31 @@ footer .footer-colum-list a.call-me-point {
         background: none;
     }
 }
+
+#faq{
+    padding-top: 8rem;
+    background-color: #fff;
+}
+
+#faq h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+}   
+
+#faq .questions {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#faq .question-item{
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
