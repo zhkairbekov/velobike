@@ -142,7 +142,7 @@ header .nav .language-button {
 .slider {
     position: relative;
     width: 100%;
-    min-height: calc(60vh - 79px);
+    min-height: 80vh;
     max-height: 100vh;
     background-size: cover;
     background-position: center;
@@ -152,7 +152,7 @@ header .nav .language-button {
     justify-content: center;
     background-color: #f4f4f4;
     background-repeat: space;
-    margin-top: 79px;
+    padding-top: 100px;
 
 }
 
@@ -237,12 +237,6 @@ header .nav .language-button {
     width: 100%;
 }
 
-.news .news-list .news-item h3 {
-    font: 800 18px 'Arial';
-    color: #00a4b7;
-    text-transform: uppercase;
-}
-
 .instruction-list {
     display: flex;
     flex-wrap: wrap;
@@ -267,41 +261,6 @@ header .nav .language-button {
     width: calc(50% - 20px);
     height: 350px;
     border-radius: 10px;
-}
-
-.news-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 2rem;
-    padding-bottom: 3rem;
-}
-
-.news .news-list .news-item {
-    width: 30%;
-    background-color: #f4f4f4;
-    padding: 15px 10px 30px 10px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    color: #000;
-    text-decoration: none;
-    justify-content: space-between;
-}
-
-.news .news-list .news-item:hover {
-    transform: translateY(-10px);
-}
-
-.news .news-list .news-item img {
-    width: 100%;
-    height: 190px;
-    border-radius: 10px;
-    object-fit: fill;
 }
 
 #tarif {
@@ -639,10 +598,6 @@ footer .footer-colum-list a.call-me-point {
     .instruction-list img {
         width: calc(50% - 10px);
     }
-
-    .news .news-list .news-item {
-        width: 100%;
-    }
 }
 
 @media (max-width: 380px) {
@@ -687,7 +642,9 @@ footer .footer-colum-list a.call-me-point {
 #news-list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 3rem;
+    padding-bottom: 3rem;
 }
 
 #news-list .news-item {
@@ -699,6 +656,7 @@ footer .footer-colum-list a.call-me-point {
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 1rem;
     color: #000;
     text-decoration: none;
@@ -740,4 +698,17 @@ footer .footer-colum-list a.call-me-point {
     flex-direction: column;
     gap: 1rem;
     padding: 20px;
+}
+
+@media (max-width: 768px) {
+    #news-list .news-item  {
+        width: 40%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    #news-list .news-item {
+        width: 90% !important;
+    }
 }
