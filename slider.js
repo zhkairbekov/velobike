@@ -1,19 +1,19 @@
 // Массив фоновых изображений для больших экранов
 const desktopImages = [
-    'img/slider/1.jpg',
-    'img/slider/2.jpg',
-    'img/slider/3.jpg',
-    'img/slider/4.jpg',
-    'img/slider/5.jpg'
+    // 'img/slider/1.png',
+    // 'img/slider/2.png',
+    // 'img/slider/3.png',
+    'img/slider/4.png',
+    // 'img/slider/5.png'
 ];
 
 // Массив фоновых изображений для маленьких экранов
 const mobileImages = [
-    'img/slider/Frame1.png',
-    'img/slider/Frame2.png',
-    'img/slider/Frame3.png',
+    // 'img/slider/Frame1.png',
+    // 'img/slider/Frame2.png',
+    // 'img/slider/Frame3.png',
     'img/slider/Frame4.png',
-    'img/slider/Frame5.png'
+    // 'img/slider/Frame5.png'
 ];
 
 let currentIndex = 0;
