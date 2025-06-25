@@ -1,38 +1,10 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const params = new URLSearchParams(window.location.search);
-    const articleId = params.get('id');
-
-    const container = document.getElementById('news-content');
-    const article = articles.find(a => a.id === articleId);
-
-    function formatDate(dateString) {
-        const date = new Date(dateString);
-        const options = { day: 'numeric', month: 'long', year: 'numeric' };
-        if (document.documentElement.lang === 'kz') {
-            return date.toLocaleDateString('kz-KZ', options);
-        }
-        if (document.documentElement.lang === 'ru') {
-            return date.toLocaleDateString('ru-RU', options);
-        }
-    }
-
-    if (article) {
-        container.innerHTML = `
+document.addEventListener("DOMContentLoaded",()=>{let e=new URLSearchParams(window.location.search),n=e.get("id"),t=document.getElementById("news-content"),a=articles.find(e=>e.id===n);function i(e){let n=new Date(e),t={day:"numeric",month:"long",year:"numeric"};return"kz"===document.documentElement.lang?n.toLocaleDateString("kz-KZ",t):"ru"===document.documentElement.lang?n.toLocaleDateString("ru-RU",t):void 0}a?t.innerHTML=`
             <div class="news-detail-item">
                 <a href="news.html" class="back-link">Назад к новостям</a>
                 <div class="news-detail-header">
-                    <p class="news-date">${formatDate(article.date)}</p>
+                    <p class="news-date">${i(a.date)}</p>
                 </div>
-                <img class="news-detail-img" src="../../img/news/${article.image}" alt="${article.title}" />
-                <div>${marked.parse(article.content)}</div>
+                <img class="news-detail-img" src="../../img/news/${a.image}" alt="${a.title}" />
+                <div>${marked.parse(a.content)}</div>
             </div>
-        `;
-    } else {
-        if (document.documentElement.lang === 'kz') {
-            container.innerHTML = '<p>Жаңалық табылмады</p>';
-        }
-        if (document.documentElement.lang === 'ru') {
-            container.innerHTML = '<p>Новость не найдена</p>';
-        }
-    }
-});
+        `:("kz"===document.documentElement.lang&&(t.innerHTML="<p>Жаңалық табылмады</p>"),"ru"===document.documentElement.lang&&(t.innerHTML="<p>Новость не найдена</p>"))});
